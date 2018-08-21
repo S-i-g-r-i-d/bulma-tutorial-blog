@@ -8,6 +8,10 @@ import { PhotoMediaComponent } from './modules/photo-media/photo-media.component
 import { ImagecardComponent } from './modules/imagecard/imagecard.component';
 import { ContentComponent } from './modules/content/content.component';
 import { PagesComponent } from './pages/pages.component';
+import { ContentpageComponent } from './pages/contentpage/contentpage.component';
+import { ImagecardpageComponent } from './pages/imagecardpage/imagecardpage.component';
+import { PhotoMediapageComponent } from './pages/photo-mediapage/photo-mediapage.component';
+import { BreadcrumbpageComponent } from './pages/breadcrumbpage/breadcrumbpage.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { PagesComponent } from './pages/pages.component';
     PhotoMediaComponent,
     ImagecardComponent,
     ContentComponent,
-    PagesComponent
+    PagesComponent,
+    ContentpageComponent,
+    ImagecardpageComponent,
+    PhotoMediapageComponent,
+    BreadcrumbpageComponent
   ],
   imports: [
     BrowserModule,

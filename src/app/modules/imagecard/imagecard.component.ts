@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component,  OnInit, Input} from '@angular/core';
+
+export interface ImgCard {
+  imgPath: string;
+}
 
 @Component({
   selector: 'app-imagecard',
@@ -6,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./imagecard.component.css']
 })
 export class ImagecardComponent implements OnInit {
+  @Input() imgCard: ImgCard;
 
   constructor() { }
 

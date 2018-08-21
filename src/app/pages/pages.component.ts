@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {ImgCard} from '../modules/imagecard/imagecard.component';
 
 
 @Component({
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.css']
 })
 export class PagesComponent implements OnInit {
+
+  @Input() imgCard: ImgCard;
+  @Input () imgCards: ImgCard[];
 
   constructor() { }
 

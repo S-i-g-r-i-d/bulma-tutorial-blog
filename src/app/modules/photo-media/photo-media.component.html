@@ -1,16 +1,24 @@
 <article class="media center">
   <figure class="media-left">
 						<span class="image is-64x64">
-							<img src="https://miro.medium.com/max/2400/1*_46H02nPL3ZQvgu_brHieg.jpeg">
+							<ng-content select="photo-media-img"></ng-content>
 						</span>
   </figure>
   <div class="media-content">
     <div class="content">
       <p>
-        <strong>Zaydek Michels-Gualtieri</strong> <a>@username_zaydek</a><br>
-        <span class="has-text-grey">Self-taught, inspired to learn<br>
-								<time datetime="2018-04-20">Apr 20</time> · 20 min read</span>
+        <strong>
+          <ng-content select="photo-media-title"></ng-content>
+        </strong>
+         <a>
+           <ng-content select="photo-media-username"></ng-content>
+         </a><br>
+        <span class="has-text-grey">
+          <ng-content select="photo-media-content"></ng-content><br>
+					<ng-content select="photo-media-footer"></ng-content>
+        </span>
       </p>
     </div>
   </div>
 </article>
+

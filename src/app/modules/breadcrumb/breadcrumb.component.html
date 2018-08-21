@@ -2,7 +2,12 @@
   <div class="container grid">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
-        <ng-content select="breadcrumb-pages"></ng-content>
+        <li><a href="#">
+          <ng-content select="breadcrumb-page"></ng-content>
+        </a></li>
+        <li class="is-active"><a href="#" aria-current="page">
+          <ng-content select="breadcrumb-selectedPage"></ng-content>
+        </a></li>
       </ul>
     </nav>
   </div>
